@@ -1,0 +1,377 @@
+.education-page {
+  padding-top: 70px;
+}
+
+.education-hero {
+  text-align: center;
+  background: var(--secondary-bg);
+}
+
+.education-intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--secondary-text);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-timeline {
+  background: var(--primary-bg);
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 50px 0;
+}
+
+.timeline-item.left .timeline-content {
+  margin-right: 50%;
+  padding-right: 40px;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: 50%;
+  padding-left: 40px;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  border: 4px solid var(--primary-bg);
+  z-index: 2;
+}
+
+.education-card {
+  background: var(--secondary-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-secondary);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.institution-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin: 0;
+}
+
+.status {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status.completed {
+  background: rgba(0, 255, 136, 0.2);
+  color: var(--success-color);
+}
+
+.status.current {
+  background: rgba(0, 212, 255, 0.2);
+  color: var(--accent-color);
+}
+
+.degree {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin: 10px 0;
+}
+
+.education-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+
+.education-description {
+  color: var(--secondary-text);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.subjects h5 {
+  color: var(--primary-text);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subjects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subject-tag {
+  background: var(--accent-bg);
+  color: var(--accent-color);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}
+
+.achievements {
+  background: var(--secondary-bg);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.achievement-card {
+  background: var(--primary-bg);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-secondary);
+}
+
+.achievement-icon {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--primary-text);
+}
+
+.achievement-card p {
+  color: var(--secondary-text);
+  line-height: 1.6;
+}
+
+.current-focus {
+  background: var(--primary-bg);
+}
+
+.focus-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.focus-item {
+  background: var(--secondary-bg);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.focus-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.focus-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.focus-item li {
+  padding: 8px 0;
+  color: var(--secondary-text);
+  position: relative;
+  padding-left: 20px;
+}
+
+.focus-item li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.future-plans {
+  background: var(--secondary-bg);
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  background: var(--primary-bg);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-secondary);
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-card li {
+  padding: 10px 0;
+  color: var(--secondary-text);
+  position: relative;
+  padding-left: 25px;
+}
+
+.plan-card li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item.left .timeline-content,
+  .timeline-item.right .timeline-content {
+    margin-left: 50px;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  
+  .timeline-marker {
+    left: 20px;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .education-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .focus-content,
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .focus-item,
+  .plan-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item.left .timeline-content,
+  .timeline-item.right .timeline-content {
+    margin-left: 40px;
+    padding-left: 15px;
+  }
+  
+  .timeline-marker {
+    left: 15px;
+    width: 15px;
+    height: 15px;
+  }
+  
+  .education-card {
+    padding: 20px;
+  }
+  
+  .institution-name {
+    font-size: 1.2rem;
+  }
+  
+  .subjects-grid {
+    gap: 8px;
+  }
+  
+  .subject-tag {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+  
+  .achievement-card,
+  .focus-item,
+  .plan-card {
+    padding: 25px;
+  }
+}
