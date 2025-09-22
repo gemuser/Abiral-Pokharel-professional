@@ -137,7 +137,7 @@ const Home = () => {
               <a href="https://www.linkedin.com/in/abiral-pokharel-054774310/" target="_blank" rel="noopener noreferrer" className="hover-lift">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:apokharel.abiral123@gmail.com" className="hover-lift">
+              <a href="mailto:pokharel.abiral123@gmail.com" className="hover-lift">
                 <Mail size={24} />
               </a>
             </div>
