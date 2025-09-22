@@ -54,7 +54,7 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      content: 'Biratnagari, Nepal',
+      content: 'Biratnagar, Nepal',
       link: 'https://maps.google.com/maps?q=Biratnagar,Nepal'
     },
     {
