@@ -131,13 +131,13 @@ const Home = () => {
               </a>
             </div>
             <div className="social-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover-lift">
+              <a href="https://github.com/gemuser" target="_blank" rel="noopener noreferrer" className="hover-lift">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover-lift">
+              <a href="https://www.linkedin.com/in/abiral-pokharel-054774310/" target="_blank" rel="noopener noreferrer" className="hover-lift">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:abiral@example.com" className="hover-lift">
+              <a href="mailto:apokharel.abiral123@gmail.com" className="hover-lift">
                 <Mail size={24} />
               </a>
             </div>
